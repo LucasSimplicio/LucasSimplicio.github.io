@@ -158,83 +158,26 @@
             <div id="forum">              
                 <h1 class="titulo">PUBLICAÇÕES </h1>
                 <div class="forum">
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-6 col-12 pb-4">
-                                        <div class="comentarios">
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Lucas Simplicio</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                            <div class="text-justify darker mt-4 float-right">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Gabriel Freitas</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
+                    
+                                        <div id="secaoPubs">
+                                            <div id="janelaPub">
+                                                <div id="telaForum">
+                                                    <form action="/app.js">
+                                                        <input type="text" id="campoNome" placeholder="Seu nome"><br>
+                                                        <textarea name="publicacao" id="pub" placeholder="Escreva aqui sua publicação"></textarea><br>
+                                                        <input type="button" id="publicar" value="Publicar"><br>
+                                                        <input type="button" id="verPub" value="Ver Publicações">
+                                                    </form>
                                                 </div>
                                             </div>
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>João Pereira</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
+                                            <div id="verForum">  
+                                                
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-5 col-md-6 col-12 pb-4">
-                                        <div class="comentarios">
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Lucas Simplicio</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                            <div class="text-justify darker mt-4 float-right">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Gabriel Freitas</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>
-                                            </div>
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>João Pereira</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-12">
-                                <div class="form-group">
-                                    <button type="button" id="post" class="btn" onclick="nãologado()">Nova Publicação</button>
-                                    
-                                </div>
-                            </div>
-                        </div>        
-                    </div>        
+                                           
                 </div>
             </div>      
+            <script src="script.js"></script>
             <script src="./grafico.js"></script>
             
 
