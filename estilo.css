@@ -1,18 +1,57 @@
 body{
-    background-color: #310C31;
+    background-color: #212529;
+    
 }
 input[name="userpic"] {
     width: 4%;
     height: 4%;
 }
+.financeirosub{
+    color: black;
+    margin-top: 20px;
+}
+.financeiromain{
+    font-size: x-large;
+}
+.financeirosubmain{
+    font-size: x-large;
+    margin-top: 30px;
+}
+.financeiromain{
+    width: 800px;
+}
+.navbar{
+    background-color: black;
+}
 .navbar-collapse{
-    margin-left: 50%;
+    margin-left: 52%;
+}
+.nomeperf{
+    margin-right: 65%;
+}
+#carouselExampleIndicators{
+    text-align: center;
 }
 .header{
     font-size: xx-large;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
+
 input[name="topright"]{
     margin-left: 50%;   
+}
+.bemvindo{
+    text-align: center;
+}
+.bannerimg{
+    margin-top: 1%;
+    width: 60%;
+    height: 60%; 
+    margin-left: 20%;
+    border-radius: 5%;
+    margin-bottom: 28px;
 }
 .navbar-brand{
         max-width: 4%;
@@ -42,6 +81,12 @@ input[name="topright"]{
     margin-left: 80px;
     margin-right: 80px;
 }
+.titulodica{
+    color: white;
+    margin-top: 20px;
+    margin-left: 290px;
+    font-size: xx-large;
+}
 .titulo{
     color: white;
     margin-top: 20px;
@@ -49,6 +94,7 @@ input[name="topright"]{
     font-size: xx-large;
 }
 @media(max-width: 415px){
+
     input[name="userpic"] {
         width: 12%;
         height: 12%;
@@ -139,7 +185,7 @@ input[name="topright"]{
 .alguma_coisa{
     background-color: #988c98;
     margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 160px;
 }
 @media(min-width: 416px){
     .info{
@@ -244,7 +290,7 @@ input[name="topright"]{
     }
 }
 footer{
-    background-color: #691969;
+    background-color: black;
     margin-top: 20px;
 }
 @media(min-height: 1180px){
@@ -275,8 +321,57 @@ footer{
 
 }
 .card-body{
-    background-color: #691969;
+    background-color: #212529;
     color: white;
     border-color: white;
     border-width: thick;
+}
+.form{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+.enunciado{
+    font-style: italic;
+    font-size: 40px;
+}
+.grafico{
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+}
+.tabela{
+    text-align: center;
+    display: inline-flex;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+.coluna1{
+    padding: 20px;
+}
+.coluna2{
+    padding: 20px;
+}
+.modal-body{
+    padding-right: 45px;
+    align-items: center;
+}
+#enTabela{
+  display: inline-block;
+  text-align: center;
+}
+#form-grafico{
+  padding: 30px;
+  padding-bottom: 40px;
+}
+#imagemModal{
+    width: 30%;
+    height: 30%;
+    padding-right: 10px;
+}
+.imagemfinaceira{
+    border-radius: 8%;
 }

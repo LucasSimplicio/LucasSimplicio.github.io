@@ -26,8 +26,14 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                    <img class="navbar-brand" src="imagens/icone_usuario.png" alt="logo"  data-bs-toggle="collapse">
-                    <a class="nav-link" aria-current="page" name="log" href="login.html" style="color:white">Login/Cadastrar</a>
+                    <img class="navbar-brand" src="imagens/icone_usuario.png" alt="logo" role="button" data-bs-toggle="collapse" href="#collapseExample">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                        <h10><a href="profile.html" style="color: white; text-decoration:none">PERFIL</a></h10>
+                        <h10><a href="diw.html" style="color: white; text-decoration:none">SAIR DA CONTA</a></h10>
+                        </div>
+                    </div>    
+                    <div id="username"> </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -67,17 +73,17 @@
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="financeiro1nolog.html">
+                 <a href="financeiro1.html">
                     <img src="imagens/financeiro1.jpg"  class="imagemfinaceira">
                     </a>
                   </div>
                   <div class="carousel-item">
-                   <a href="financeiro2nolog.html">
+                   <a href="financeiro2.html">
                    <img src="imagens/financeiro2.jpg" class="imagemfinaceira">
                    </a>
                  </div>
                  <div class="carousel-item">
-                   <a href="financeiro3nolog.html">
+                   <a href="financeiro3.html">
                    <img src="imagens/financeiro3.jpg" class="imagemfinaceira">
                    </a>
                   </div>
@@ -92,66 +98,66 @@
               </button>
               </div> 
         </div>
-            <div id="grafico">
-              <h1 class="titulo">GRÁFICO MONETÁRIO </h1>
-                <div class="alguma_coisa">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                <!--tabela (visão semanal)-->
-                                
-                                    <p class="enunciado" id="enTabela">TABELA</p>
-                                    <div class="tabela">
-                                        <div class="coluna1"><p>gastos</p>
-                                        <!--criação de linhas-->
-                                            <ul id="c1">
-                                            </ul>
-                                        </div>
-                                        <div class="coluna2"><p>investimentos</p>
-                                        <!--criação de linhas-->  
-                                            <ul id="c2">
-                                            </ul>
-                                        </div>
-                                    </div>
-                                <!--FIM tabela-->
-                                
-                                    <div id="form-grafico">
-                                
-                                        <!--gráfico-->
-                                            <div class="grafico"> 
-                                                <canvas id="Chart"></canvas>
-                                            </div>
-                                            
-                                        <!--FIM gráfico-->
+        <div id="grafico">
+            <h1 class="titulo">GRÁFICO MONETÁRIO </h1>
+              <div class="alguma_coisa">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                              <!--tabela (visão semanal)-->
+                              
+                                  <p class="enunciado" id="enTabela">TABELA</p>
+                                  <div class="tabela">
+                                      <div class="coluna1"><p>gastos</p>
+                                      <!--criação de linhas-->
+                                          <ul id="c1">
+                                          </ul>
+                                      </div>
+                                      <div class="coluna2"><p>investimentos</p>
+                                      <!--criação de linhas-->  
+                                          <ul id="c2">
+                                          </ul>
+                                      </div>
+                                  </div>
+                              <!--FIM tabela-->
+                              
+                                  <div id="form-grafico">
+                              
+                                      <!--gráfico-->
+                                          <div class="grafico"> 
+                                              <canvas id="Chart"></canvas>
+                                          </div>
+                                          
+                                      <!--FIM gráfico-->
 
-                                        <!--formulário -->
-                                    
-                                        <div class="form" id="form">
+                                      <!--formulário -->
+                                  
+                                      <div class="form" id="form">
 
-                                            <p class="enunciado">. DADOS .</p>
-                                            <div onmouseenter="entrare()" onmouseout="saire()" id="educacao">Educação</div>
-                                            <div id="percentagemA"> </div>
-                                            <p><input id="DADOeducacao" type="number" name="dados"></p>
-                                            <div onmouseenter="entrari()" onmouseout="sairi()" id="investimento">Investimento</div>
-                                            <div id="percentagemB"> </div>
-                                            <p><input id="DADOinvestimento" type="number" name="dados"></p>
-                                            <div onmouseenter="entrard()" onmouseout="saird()" id="despeza">Despeza</div>
-                                            <div id="percentagemC"> </div>
-                                            <p><input id="DADOdespeza" type="number" name="dados"></p>
-                                            <div onmouseenter="entrarl()" onmouseout="sairl()" id="lazer">Lazer</div>
-                                            <div id="percentagemD"> </div>
-                                            <p><input id="DADOlazer" type="number" name="dados"></p>
-                                            <p><button id="verificar" onclick="verificar()">Inserir</button></p>
+                                          <p class="enunciado">. DADOS .</p>
+                                          <div onmouseenter="entrare()" onmouseout="saire()" id="educacao">Educação</div>
+                                          <div id="percentagemA"> </div>
+                                          <p><input id="DADOeducacao" type="number" name="dados"></p>
+                                          <div onmouseenter="entrari()" onmouseout="sairi()" id="investimento">Investimento</div>
+                                          <div id="percentagemB"> </div>
+                                          <p><input id="DADOinvestimento" type="number" name="dados"></p>
+                                          <div onmouseenter="entrard()" onmouseout="saird()" id="despeza">Despeza</div>
+                                          <div id="percentagemC"> </div>
+                                          <p><input id="DADOdespeza" type="number" name="dados"></p>
+                                          <div onmouseenter="entrarl()" onmouseout="sairl()" id="lazer">Lazer</div>
+                                          <div id="percentagemD"> </div>
+                                          <p><input id="DADOlazer" type="number" name="dados"></p>
+                                          <p><button id="verificar" onclick="verificar()">Inserir</button></p>
 
-                                        </div>
-                                    <!--FIM formulário-->
-                                    </div>
-                            
-                            </div>
-                        </div>    
-                    </div>   
-                </div>
-            </div>    
+                                      </div>
+                                  <!--FIM formulário-->
+                                  </div>
+                          
+                          </div>
+                      </div>    
+                  </div>   
+              </div>
+          </div>    
             <div id="forum">              
                 <h1 class="titulo">PUBLICAÇÕES </h1>
                 <div class="forum">
@@ -224,15 +230,14 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-12">
                                 <div class="form-group">
-                                    <button type="button" id="post" class="btn" onclick="nãologado()">Nova Publicação</button>
+                                    <button type="button" id="post" class="btn" onclick="funcaoemdesenvolvimento()">Nova Publicação</button>
                                 </div>
                             </div>
                         </div>        
                     </div>        
                 </div>
-            </div>      
-            <script src="./grafico.js"></script>
-            
+            </div>
+            <script src="./grafico.js"></script>      
 
     </main>
     <footer>
@@ -243,8 +248,8 @@
         </div>
     </footer>
     <script>
-        function nãologado() {
-            alert ('VOCÊ PRECISA ESTAR LOGADO PARA USAR ESSA FUNÇÃO')
+        function emdesenvolvimento() {
+            alert ('PÁGINA EM DESENVOLVIMENTO')
         }
         function funcaoemdesenvolvimento() {
             alert ('FUNÇÃO EM DESENVOLVIMENTO')
