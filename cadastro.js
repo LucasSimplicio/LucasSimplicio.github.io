@@ -98,6 +98,8 @@ if(validConfirmaSenha && validNome && validUsuario && validSenha){
             senhaCadastrada: senha.value
         }
     )
+    
+   
 
     localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios))
 

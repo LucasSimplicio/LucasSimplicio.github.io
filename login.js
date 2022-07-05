@@ -14,6 +14,7 @@ function entrar(){
         senha:''
     }
     
+    
 
     listaUsuario = JSON.parse(localStorage.getItem('listaUsuarios'))
 
@@ -26,7 +27,7 @@ function entrar(){
             }
         }
     })
-
+    console.log(usuario.value)
     if(usuario.value == userValid.usuario && senha.value == userValid.senha){
         window.location.href = 'diw2.html'
     }
@@ -39,5 +40,5 @@ function entrar(){
         msgError.innerHTML = 'Usuário e/ou senha incorreto(s), tente novamente'
         usuario.focus()
     }
-    username.innerHTML = String(usuario)
+    
 }

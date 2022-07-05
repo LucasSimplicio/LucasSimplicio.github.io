@@ -33,7 +33,7 @@
                         <h10><a href="index.html" style="color: white; text-decoration:none">SAIR DA CONTA</a></h10>
                         </div>
                     </div>    
-                    <div id="username"> </div>
+                    <a style="color: white;">Abreu</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -103,22 +103,10 @@
               <div class="alguma_coisa">
                   <div class="container">
                       <div class="row">
-                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                          
                               <!--tabela (visão semanal)-->
                               
-                                  <p class="enunciado" id="enTabela">TABELA</p>
-                                  <div class="tabela">
-                                      <div class="coluna1"><p>gastos</p>
-                                      <!--criação de linhas-->
-                                          <ul id="c1">
-                                          </ul>
-                                      </div>
-                                      <div class="coluna2"><p>investimentos</p>
-                                      <!--criação de linhas-->  
-                                          <ul id="c2">
-                                          </ul>
-                                      </div>
-                                  </div>
+                                  
                               <!--FIM tabela-->
                               
                                   <div id="form-grafico">
@@ -152,92 +140,52 @@
                                       </div>
                                   <!--FIM formulário-->
                                   </div>
+                                  <div class="dadosemcasa" style="text-align:end; max-width: 423px; margin-left: 100px;">
+                                      <p class="enunciado" id="enTabela">TABELA</p>
+                                      <div class="tabela">
+                                          <div class="coluna1"><p>gastos</p>
+                                          <!--criação de linhas-->
+                                              <ul id="c1">
+                                              </ul>
+                                          </div>
+                                          <div class="coluna2"><p>investimentos</p>
+                                          <!--criação de linhas-->  
+                                              <ul id="c2">
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
                           
-                          </div>
+                          
                       </div>    
                   </div>   
               </div>
-          </div>    
+          </div>     
             <div id="forum">              
                 <h1 class="titulo">PUBLICAÇÕES </h1>
                 <div class="forum">
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-5 col-md-6 col-12 pb-4">
-                                        <div class="comentarios">
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Lucas Simplicio</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                            <div class="text-justify darker mt-4 float-right">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Gabriel Freitas</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
+                    
+                                        <div id="secaoPubs">
+                                            <div id="janelaPub">
+                                                <div id="telaForum">
+                                                    <form action="/app.js">
+                                                        <input type="text" id="campoNome" placeholder="Seu nome"><br>
+                                                        <textarea name="publicacao" id="pub" placeholder="Escreva aqui sua publicação"></textarea><br>
+                                                        <input type="button" id="publicar" value="Publicar"><br>
+                                                        <input type="button" id="verPub" value="Ver Publicações">
+                                                    </form>
                                                 </div>
                                             </div>
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>João Pereira</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
+                                            <div id="verForum">  
+                                                
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-5 col-md-6 col-12 pb-4">
-                                        <div class="comentarios">
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Lucas Simplicio</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                            <div class="text-justify darker mt-4 float-right">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>Gabriel Freitas</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>
-                                            </div>
-                                            <div class="comment mt-4 text-justify float-left">
-                                                <img src="imagens/icone_usuario.png" alt="" class="foto_user" width="40" height="40">
-                                                <h4>João Pereira</h4>
-                                                <div class="comentario">
-                                                    <span>- 15 de Maio 2022</span>
-                                                    <br>
-                                                    <p5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p5>
-                                                </div>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-12">
-                                <div class="form-group">
-                                    <button type="button" id="post" class="btn" onclick="funcaoemdesenvolvimento()">Nova Publicação</button>
-                                </div>
-                            </div>
-                        </div>        
-                    </div>        
+                                           
                 </div>
             </div>
-            <script src="./grafico.js"></script>      
+            <script src="./grafico.js"></script>    
+            <script src="login.js"></script>  
+            <script src="script.js"></script>
 
     </main>
     <footer>
@@ -254,45 +202,7 @@
         function funcaoemdesenvolvimento() {
             alert ('FUNÇÃO EM DESENVOLVIMENTO')
         }
-        window.onload = () =>{
-            let contas;
-            renda.onchange = () => console.log(renda.value);
-            conta.onchange = () => console.log(conta.value);
-            educacao.onchange = () => console.log(educacao.value);
-            investimento.onchange = () => console.log(investimento.value);
-            
-            let chart = new Chart(document.getElementById("myChart"), {
-            type: 'pie',
-            data: {
-                labels:["Contas Fixas","Resto","Mensalidade da Faculdade","Valor para Investir"],
-                datasets: [{
-                    data: [500,50,1200,100],
-                    backgroundColor: [
-                        'rgba(255, 0, 0)',
-                        'rgba(60, 179, 113)',
-                        'rgba(255, 165, 0)',
-                        'rgba(0, 0, 255)'
-                    ]
-                }
-                ]
-            },
-            options: {
-                scales:{
-                    yAxes: [
-                        {
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }
-                    ]
-                }
-            }
-        }); 
-        }
-
-    
-
-
+       
    </script>
 
 
