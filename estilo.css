@@ -239,6 +239,10 @@ input[name="topright"]{
         position: static;
         width: 250px;
     }
+    .imagemfinaceira{
+        border-radius: 8%;
+        
+    }
     .forum{
         background-color: #988c98;
         margin-left: 50px;
